@@ -1,1 +1,238 @@
-This is main page!
+<html style="font-size: 100px;"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>BloodPressure</title>
+    <style>
+      html,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      div,
+      body {
+        padding: 0;
+        margin: 0;
+        color: #000;
+      }
+      body {
+        /*background-image: url('/images/xxx.svg');*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+    <style>
+       html {
+        height: 100%;
+      } 
+      #home {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      #home .nav {
+        padding: 0.2rem;
+      }
+      #home .nav .logo {
+        height: 0.68rem;
+      }
+
+      #home .home-main {
+        padding: 10px 0;
+      }
+      #home .home-main .banner {
+        width: 100%;
+      }
+      #home .banner img {
+        width: 100%;
+        cursor: pointer;
+      }
+      #home .down {
+        margin-top: 0.24rem;
+      }
+      #home .down .d-title {
+        font-size: 0.62rem;
+        font-weight: 500;
+        line-height: 0.7rem;
+        margin-bottom: 0.3rem;
+      }
+      #home .down .d-text {
+        font-size: 0.25rem;
+        line-height: 1.5;
+        margin-bottom: 0.3rem;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      #home .store {
+        display: flex;
+        margin: 0 -0.1rem;
+        justify-content: center;
+        flex-direction: row;
+      }
+      #home .store img {
+        max-height: 0.8rem;
+        margin: 0 0.1rem;
+      }
+
+      #home .contact {
+        width: 100%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 0.22rem;
+        padding: 0.2rem 0 0.4rem;
+      }
+      #home .contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      #home .contact.footer-links {
+        padding: 0.2rem 0 0;
+      }
+      #home .footer-links .split {
+        margin: 0 0.04rem;
+      }
+      #home .contact.footer-links a:hover {
+        color: #5067ed;
+      }
+
+      .game-btn-box {
+        width: 100%;
+        padding: 0.3rem 0;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 720px) {
+        #home .down .d-title {
+          padding-left: 0.32rem;
+          padding-right: 0.32rem;
+        }
+        #home .down .d-text {
+          padding-left: 0.32rem;
+          padding-right: 0.32rem;
+        }
+      }
+
+      @media (min-width: 720px) {
+        #home .nav {
+          padding: 40px 60px;
+        }
+        #home .nav .logo {
+          height: 68px;
+        }
+
+        #home .home-main {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          align-items: center;
+        }
+        #home .banner {
+          padding-top: 20px;
+          padding-left: 6vw;
+          padding-right: 6vw;
+          width: 60%;
+        }
+
+        #home .down {
+          margin-top: 0;
+          padding-left: 8vw;
+          max-width: 50%;
+        }
+        #home .down .d-title {
+          text-align: left;
+          font-size: 5vw;
+          line-height: 5vw;
+          margin-bottom: 2vw;
+        }
+        #home .down .d-text {
+          font-size: 1.5vw;
+          margin-bottom: 2vw;
+        }
+        #home .store {
+          display: flex;
+          margin: 0 -14px;
+          justify-content: flex-start;
+          flex-direction: row;
+        }
+        #home .store img {
+          height: 5vw;
+          margin: 0 14px;
+        }
+      }
+
+      @media (min-width: 1500px) {
+        #home .home-main {
+          max-width: 1800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        #home .banner {
+          width: 54%;
+        }
+        #home .down {
+          margin-top: 0.6rem;
+          padding-left: 140px;
+        }
+        #home .down .d-title {
+          font-size: 64px;
+          line-height: 70px;
+          margin-bottom: 40px;
+        }
+        #home .down .d-text {
+          font-size: 32px;
+          margin-bottom: 30px;
+        }
+        #home .store {
+          margin: 0 -14px;
+        }
+        #home .store img {
+          height: 55px;
+          margin: 0 14px;
+        }
+      }
+    </style></head>
+
+  <body id="home">
+    <header class="nav">
+        <img class="logo" src="./images/ic_launcher.webp">
+    </header>
+    <section class="home-main">
+      <div class="banner">
+          <img src="./images/ic_launcher.webp">
+      </div>
+      <div class="down">
+        <h1 class="d-title">
+          BloodPressure
+        </h1>
+        <p class="d-text">
+          Take care of your heart and monitor your blood pressure! Record in real-time, analyze intelligently, receive expert advice, and stay healthy with ease!
+        </p>
+        <div class="store">
+          <a href="https://play.google.com/store/apps/details?id=com.bwb.bloodpressure"><img src="./images/google-store.png" alt="Google Play" title="Google Play"></a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+      <section class="contact footer-links">
+        <a href="https://black-mask4.github.io/blood/blood_privacy_policy.html">Privacy Policy</a>
+      </section>
+      <section class="contact">
+        <a href="mailto:twp333565@gmail.com">Contact us</a>
+      </section>
+    </section>
+    </div>
+  </body></html>
